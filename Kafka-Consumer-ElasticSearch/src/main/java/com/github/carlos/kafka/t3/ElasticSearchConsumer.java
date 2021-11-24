@@ -56,6 +56,7 @@ public class ElasticSearchConsumer {
                 try{
                     String id = extracIdFromTweet(record.value());
 
+
                     IndexRequest indexReq = new IndexRequest(
                             "twitter",
                             "tweets",
